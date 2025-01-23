@@ -1,0 +1,145 @@
+{/* <!-- Counts Section --> */}
+    <section id="counts" className="section counts light-background">
+
+      <div className="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div className="row gy-4">
+          <div className="col-lg-3 col-md-6">
+            <div className="stats-item text-center w-100 h-100">
+              <span data-purecounter-start="0" data-purecounter-end="1232" data-purecounter-duration="1" className="purecounter"></span>
+              <p>Students</p>
+            </div>
+          </div>
+          {/* <!-- End Stats Item --> */}
+
+          <div className="col-lg-3 col-md-6">
+            <div className="stats-item text-center w-100 h-100">
+              <span data-purecounter-start="0" data-purecounter-end="64" data-purecounter-duration="1" className="purecounter"></span>
+              <p>Courses</p>
+            </div>
+          </div>
+          {/* <!-- End Stats Item --> */}
+
+          <div className="col-lg-3 col-md-6">
+            <div className="stats-item text-center w-100 h-100">
+              <span data-purecounter-start="0" data-purecounter-end="42" data-purecounter-duration="1" className="purecounter"></span>
+              <p>Events</p>
+            </div>
+          </div>
+          {/* <!-- End Stats Item --> */}
+
+          <div className="col-lg-3 col-md-6">
+            <div className="stats-item text-center w-100 h-100">
+              <span data-purecounter-start="0" data-purecounter-end="24" data-purecounter-duration="1" className="purecounter"></span>
+              <p>Trainers</p>
+            </div>
+          </div>
+          {/* <!-- End Stats Item --> */}
+        </div>
+      </div>
+    </section>
+    {/* <!-- /Counts Section --> */}
+
+    {/* <!-- Why Us Section --> */}
+    <section id="why-us" className="section why-us">
+
+      <div className="container">
+
+        <div className="row gy-4">
+
+          <div className="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div className="why-box">
+              <h3>چرا ما بهترینیم ؟</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
+                Asperiores dolores sed et. Tenetur quia eos. Autem tempore quibusdam vel necessitatibus optio ad corporis.
+              </p>
+              <div className="text-center">
+                <a href="#" className="more-btn"><span>بیشتر بدانید</span> <i className="bi bi-chevron-left"></i></a>
+              </div>
+            </div>
+          </div>
+          {/* <!-- End Why Box --> */}
+
+          <div className="col-lg-8 d-flex align-items-stretch">
+            <div className="row gy-4" data-aos="fade-up" data-aos-delay="200">
+              <div className="col-xl-4">
+                <IconBox
+                    icon={<i className='bi bi-clipboard-data'></i>}
+                    title='Corporis voluptates officia eiusmod'
+                    paragraph={`
+                        Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip 
+                    `}
+                />
+              </div>
+              {/* <!-- End Icon Box --> */}
+              <div className="col-xl-4" data-aos="fade-up" data-aos-delay="300">
+                <IconBox
+                    icon={<i className='bi bi-gem'></i>}
+                    title='Ullamco laboris ladore pan'
+                    paragraph={`
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt 
+                    `}
+                />
+              </div>
+              {/* <!-- End Icon Box --> */}
+              <div className="col-xl-4" data-aos="fade-up" data-aos-delay="400">
+                <IconBox
+                    icon={<i className='bi bi-inboxes'></i>}
+                    title='Labore consequatur incidid dolore'
+                    paragraph={`
+                        Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere 
+                    `}
+                />
+              </div>
+              {/* <!-- End Icon Box --> */}
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    {/* <!-- /Why Us Section --> */}
+
+ 
+
+    {/* <!-- Courses Section --> */}
+    <section id="courses" className="courses section">
+
+      {/* <!-- Section Title --> */}
+      <div className="container section-title" data-aos="fade-up">
+        <h2>دوره ها</h2>
+        <p>پر طرفدار ها</p>
+      </div>
+      {/* <!-- End Section Title --> */}
+      <div className="container">
+        {/* display courses here */}
+        <div className="row">
+          {
+            courses.map((course, index)=>(
+              <div key={index} className="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay={`${(index+1)*100}`}>
+                <CourseCard course={course} /> 
+              </div>
+            ))
+          }
+        </div>
+      </div>
+    </section>
+    {/* <!-- /Courses Section --> */}
+
+    {/* <!-- Trainers Index Section --> */}
+    <section id="trainers-index" className="section trainers-index">
+    <div className="container section-title" data-aos="fade-up">
+        <h2>اساتید</h2>
+        <p>اساتید برتر</p>
+      </div>
+      <div className="container">
+        <div className="row">
+          {teachers.map((teacher, index)=>(
+            <div key={index} className="col-lg-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
+              <TeacherCard teacher = {teacher} />
+          </div>
+          ))}
+        </div>
+      </div>
+    </section>
+    {/* <!-- /Trainers Index Section --> */}

@@ -1,0 +1,43 @@
+
+.feed-container{
+    max-width: 1050px;
+    position: relative;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+
+
+.feed-header{
+    position: relative;
+    background-color: color-mix(in srgb, var(--accent-color), transparent 80%);
+    color: var(--heading-color);
+    width: 100%;
+    height: 150px;
+}
+
+.feed-body{
+    width: 100%;
+}
+
+.feed-body a{
+    color:var(--default-color);
+}
+.feed-body a:hover{
+    color: var(--contrast-color) !important;
+}
+
+.feed-body .swiper{
+    height: 100%;
+}
+.feed-body .swiper-slide{
+    width: 100%;
+}
+
+.feed-pagination{
+   width: 100%;
+}
+
+.bg-costum{
+    background-color: rgb(30, 20, 43);
+}

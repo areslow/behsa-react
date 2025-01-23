@@ -1,0 +1,52 @@
+.comment-toolbar .apply-edit-button,
+.comment-toolbar .cancel-edit-button,
+.comment-toolbar .edit-button,
+.comment-toolbar .delete-button{
+
+    cursor: pointer;
+}
+
+.comment-toolbar .apply-edit-button,
+.comment-toolbar .edit-button,
+.comment-toolbar .delete-button{
+    color: var(--accent-color);
+}
+
+.comment-toolbar .cancel-edit-button{
+    color: rgb(52, 52, 40);
+}
+
+.comment-toolbar .edit-button:hover{
+    color: rgb(30, 215, 240);
+}
+.comment-toolbar .delete-button:hover{
+ color: rgb(202, 12, 12);
+}
+.comment-toolbar .apply-edit-button:hover{
+    color: blue;
+}
+.comment-toolbar .cancel-edit-button:hover{
+    color: rgb(170, 12, 165);
+}
+
+.comment textarea,
+.comment-box textarea{
+  font-size: 14px;
+  padding: 10px 15px;
+  box-shadow: none;
+  border-radius: 0;
+  color: var(--default-color);
+  background-color: white;
+  border-color: color-mix(in srgb, var(--default-color), transparent 80%);
+}
+
+.comment textarea:focus,
+.comment-box textarea:focus{
+    border-color: var(--accent-color);
+    box-shadow: none;
+  }
+
+  .comment textarea::placeholder,
+  .comment-box textarea::placeholder {
+    color: color-mix(in srgb, var(--default-color), transparent 70%);
+  }

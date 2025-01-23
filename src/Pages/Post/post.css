@@ -1,0 +1,101 @@
+  
+  .editor-wrapper {
+    height: 100vh;
+    background: #fff;
+    padding: 1rem;
+  }
+  
+  .editor-container {
+    width: 100%;
+    border: 1px solid green;
+    background-color: #e8e8e8;
+    padding: 1rem;
+    height: 50%;
+    max-height: 70%;
+    overflow-y: auto;
+  }
+  
+  .toolbar-grid {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 1fr 1fr;
+  }
+  
+  button {
+    margin-right: 8px;
+    font-size: 1rem;
+    padding: 10px;
+    border: none;
+    background: #fff;
+    cursor: pointer;
+  }
+  
+  .superFancyBlockquote {
+    color: #999;
+    background: #fff;
+    font-family: "Hoefler Text", Georgia, serif;
+    font-style: italic;
+    border-left: 2px solid #999;
+    padding-left: 10px;
+  }
+  
+  .codeBlock {
+    font-family: fira-code, monospace;
+    font-size: inherit;
+    background: #ffeff0;
+    font-style: italic;
+    word-wrap: normal;
+    word-wrap: break-word;
+    box-decoration-break: slice;
+    padding: 0.3rem 2rem;
+    border-radius: 0.2rem;
+  }
+  
+  .leftAlign {
+    text-align: left;
+  }
+  .rightAlign {
+    text-align: right;
+  }
+  .centerAlign {
+    text-align: center;
+  }
+  .justifyAlign {
+    text-align: justify;
+  }
+  
+  #abstract-input{
+    resize: none;
+  }
+
+  #abstract-input,
+  #references-input,
+  #title-input{
+    font-size: 14px;
+    padding: 10px 15px;
+    box-shadow: none;
+    border-radius: 0;
+    color: var(--default-color);
+    background-color: white;
+    border-color: color-mix(in srgb, var(--default-color), transparent 80%);
+  }
+  #abstract-input:focus,
+  #references-input:focus,
+  #title-input:focus{
+    border-color: var(--accent-color);
+  }
+  #abstract-input::placeholder,
+  #references-input::placeholder,
+  #title-input::placeholder{
+    color: color-mix(in srgb, var(--default-color), transparent 70%);
+  }
+
+
+  .post-card{
+    box-shadow: 0px 1px 5px;
+  }
+
+
+  .post-card a{
+    text-decoration: none;
+  }

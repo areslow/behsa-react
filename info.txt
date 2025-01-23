@@ -1,0 +1,43 @@
+entities in this website :
+
+course :{
+    id: reqired
+    category: required,
+    price: required,
+    title: required,
+    description: required,
+    courseImage: nullable,
+    trainer :{} // a required object
+}
+
+trainer:{ // or teacher or ... it can be a user with role = trainer
+    id: required,
+    name: required,
+    lastName: nullable,
+    speciality: required,
+    description: required,
+    image: nullable,
+    socials:[] // an array of links to teacher social media or something else
+
+}
+
+
+post:{
+    postId, // empty when creating a post
+    dateCreated, // only retriving for existing items
+    title, // required
+    abstract,// nullable
+    content, // required
+    refrences, // nullable,
+    authorId, // we will set restrictions based on the post owner for example set people that can edit the post or delete it
+    isOpen,
+}
+
+
+
+news api key
+013fbe5f5f3c4948806711a1d114531c
+
+
+
+continue from product page
